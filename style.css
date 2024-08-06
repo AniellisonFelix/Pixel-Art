@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:wght@400;500;700&display=swap');
+
+h1 {
+	background-image: radial-gradient(#0097ff, #0c74c4);
+	color: white;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.534);
+	border-radius: 10px;
+	height: 150px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Pixelify Sans';
+	font-size: 40px;
+	text-shadow: 1px 2px 6px black;
+}
+
+h2 {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family:  'Pixelify Sans';
+	font-size: 35px;
+	background: linear-gradient(to right, rgba(0, 168, 253), #fff 35%, #e00a95, #fff, rgb(3, 248, 3), blue, #fff, red, #fff,yellow,#fff, black,#fff, gray, #fff,blue,#fff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s linear infinite;
+}
+
+#color-palette {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+  .color {
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.534);
+	border-radius: 50% 10% 50% 10%/ 10% 50% 10% 50%;
+	margin: 10px;
+	border: 1px solid black;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+  }
+
+  #pixel-board {
+	margin-top: 30px;
+	border-color: 1px solid black;
+	margin-left: 10px;
+  }
+
+  .pixel {
+	border: 1px solid black;
+	width: 40px;
+	height: 40px;
+	background-color: white;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	background-color: lightgray;
+  }
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 75%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 70%;
+	}
+}
