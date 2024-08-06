@@ -1,7 +1,6 @@
-// CRIA TITULO
 document.getElementById('title').innerText = 'Paleta de Cores';
 document.getElementById('extra').innerText = 'Pixels Art';
-// FUNÇÃO DE CAPTURA DE CLASS E ID
+
 const pegaelementos = (idClass) => {
   const elements = document.querySelectorAll(idClass);
   if (elements.length === 0) return;
@@ -9,12 +8,12 @@ const pegaelementos = (idClass) => {
   const element = document.querySelector(idClass);
   if (element[0].id) return element;
 };
-// CAPTURAS
+
 const div = document.createElement('div');
 const body = document.querySelector('body');
 const primeiroFilho = body.firstElementChild;
 const segundoFilho = primeiroFilho.nextElementSibling;
-// CRIA PALETA DE CORES
+
 div.id = 'color-palette';
 primeiroFilho.after(div);
 const elementoDiv = '<div></div>';
@@ -29,7 +28,6 @@ colorClass[0].style.backgroundColor = 'black';
 colorClass[1].style.backgroundColor = 'red';
 colorClass[2].style.backgroundColor = 'yellow';
 colorClass[3].style.backgroundColor = 'blue';
-// ADICIONA CLASSE SELECTED
 const colorSelect = (event) => {
   for (let index = 0; index < colorClass.length; index += 1) {
     if (colorClass[index].classList.contains('selected')) {
@@ -39,7 +37,6 @@ const colorSelect = (event) => {
   }
   event.target.classList.add('selected');
 };
-// CRIA BOTÃO LIMPAR
 const botao = document.createElement('button');
 botao.innerText = 'Limpar';
 botao.id = 'clear-board';
@@ -125,7 +122,6 @@ const recuperaTamanho = () => {
   }
 };
 recuperaTamanho();
-
 const recuperaQuadroPintado = () => {
   if (localStorage.getItem('pixelBoard')) {
     const pixelBoard = localStorage.getItem('pixelBoard');
